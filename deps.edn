@@ -1,0 +1,8 @@
+{:deps {org.clojure/clojure {:mvn/version "1.10.1"}
+        org.clojure/clojurescript {:mvn/version "1.10.866"}
+        com.bhauman/figwheel-main {:mvn/version "0.2.14-SNAPSHOT"}
+        com.bhauman/rebel-readline-cljs {:mvn/version "0.1.4"}}
+ :aliases {:test {:main-opts ["-m" "figwheel.main"
+                              "--compile-opts" "test.cljs.edn"
+                              "--main" "smallproj.core-test"]}}
+ :paths ["test" "target"]}

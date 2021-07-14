@@ -1,0 +1,5 @@
+^{:auto-bundle :webpack
+  :clean-outputs true
+  :launch-js ["chromium-browser" "--headless" "--repl" "--disable-gpu" :open-url]}
+{:main smallproj.core-test
+ :optimizations :whitespace}
